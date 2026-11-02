@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal website and JavaScript tools project">
+  <title>Income tax calculator | Ahmad Salahuddin</title>
+  <!-- Name: Ahmad Salahuddin bin Mazlan | Matric: DX242569SPDJ04 | Section: 01 -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/tools.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="logo" href="Main.html" aria-label="Ahmad Salahuddin - homepage"><span class="logo-mark"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19V5a2 2 0 0 1 2-2h13v18H6a2 2 0 0 1-2-2zM4 17a2 2 0 0 1 2-2h13"/></svg></span><span>AHMAD<span class="logo-dot">.</span></span></a>
+      <nav class="nav-desktop" aria-label="Main navigation"><a class="nav-link " href="Main.html">Home</a><a class="nav-link " href="PersonalInfo.html">About me</a><a class="nav-link " href="CV.html">My CV</a><a class="nav-link active" href="Tools.html">Useful tools</a></nav>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation" hidden><a class="nav-link " href="Main.html">Home</a><a class="nav-link " href="PersonalInfo.html">About me</a><a class="nav-link " href="CV.html">My CV</a><a class="nav-link active" href="Tools.html">Useful tools</a></nav>
+  </header>
+  <main id="main-content"><section class="subhero"><div class="page-container"><span class="eyebrow">TOOL 03 / FINANCE</span><h1>Income tax calculator.</h1><p>Calculate progressive tax based on annual chargeable income.</p></div></section>
+<section class="section section-white"><div class="page-container tool-layout"><form class="calculator-panel content-card" id="taxForm" novalidate><div class="tool-breadcrumb"><a href="Main.html">Home</a><span>/</span><a href="Tools.html">Useful tools</a><span>/</span><span>Income tax calculator</span></div><h2>Calculate income tax</h2><p class="tool-intro">Enter your <strong>annual chargeable income</strong>, not monthly gross salary.</p><div class="form-field"><label for="taxIncome">Annual chargeable income (RM)</label><input id="taxIncome" type="number" inputmode="decimal" step="any" min=0 placeholder="e.g. 50000" required></div>
+<button type="submit" class="btn btn-primary w3-button btn-full">Calculate tax <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
+<div class="tool-results" id="taxResult" role="status" aria-live="polite"><span>ESTIMATED INCOME TAX</span><strong>Waiting for input</strong><small>The annual tax amount will appear here.</small></div><div class="tax-breakdown" id="taxBreakdown" hidden></div><button type="reset" class="reset-link">Reset tax calculator</button></form>
+<div class="tool-aside"><span class="tool-aside-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="2"/><circle cx="17" cy="17" r="2"/><path d="M5 19 19 5"/></svg></span><h3>How progressive tax works</h3><p>Different portions of chargeable income are taxed at different rates. A higher rate applies only to the income within that band.</p><div class="small-example"><span>EXAMPLE FROM LAB BRACKETS</span><strong>RM50,000 &rarr; RM1,800 tax</strong></div><aside class="note-card"><div class="note-ic"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5 5L20 6"/></svg></div><div><strong>Educational exercise</strong><p>The rates intentionally reproduce the Lab Skill 3 table. This is not a current official tax filing calculator; personal reliefs and rebates are not calculated.</p></div></aside></div></div></section></main>
+  <footer class="site-footer"><div class="page-container footer-row"><div><strong>AHMAD<span class="logo-dot">.</span></strong><span class="footer-small">Web Programming Individual Project</span></div><span class="footer-small">DSPD1703 &nbsp;&middot;&nbsp; DX242569SPDJ04 &nbsp;&middot;&nbsp; Section 01</span></div></footer>
+</body>
+</html>

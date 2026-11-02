@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal website and JavaScript tools project">
+  <title>Simple calculator | Ahmad Salahuddin</title>
+  <!-- Name: Ahmad Salahuddin bin Mazlan | Matric: DX242569SPDJ04 | Section: 01 -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/tools.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="logo" href="Main.html" aria-label="Ahmad Salahuddin - homepage"><span class="logo-mark"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19V5a2 2 0 0 1 2-2h13v18H6a2 2 0 0 1-2-2zM4 17a2 2 0 0 1 2-2h13"/></svg></span><span>AHMAD<span class="logo-dot">.</span></span></a>
+      <nav class="nav-desktop" aria-label="Main navigation"><a class="nav-link " href="Main.html">Home</a><a class="nav-link " href="PersonalInfo.html">About me</a><a class="nav-link " href="CV.html">My CV</a><a class="nav-link active" href="Tools.html">Useful tools</a></nav>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation" hidden><a class="nav-link " href="Main.html">Home</a><a class="nav-link " href="PersonalInfo.html">About me</a><a class="nav-link " href="CV.html">My CV</a><a class="nav-link active" href="Tools.html">Useful tools</a></nav>
+  </header>
+  <main id="main-content"><section class="subhero"><div class="page-container"><span class="eyebrow">TOOL 01 / MATHEMATICS</span><h1>Simple calculator.</h1><p>Perform the four basic mathematical operations using two numbers.</p></div></section>
+<section class="section section-white"><div class="page-container tool-layout"><div class="calculator-panel content-card"><div class="tool-breadcrumb"><a href="Main.html">Home</a><span>/</span><a href="Tools.html">Useful tools</a><span>/</span><span>Simple calculator</span></div><h2>Calculate two values</h2><p class="tool-intro">Enter a first and second number, then choose an operation.</p><div class="input-grid"><div class="form-field"><label for="calcA">First number</label><input id="calcA" type="number" inputmode="decimal" step="any"  placeholder="e.g. 12" required></div><div class="form-field"><label for="calcB">Second number</label><input id="calcB" type="number" inputmode="decimal" step="any"  placeholder="e.g. 3" required></div></div>
+<div class="operation-grid"><button type="button" class="op-btn" data-calc="add">+ <span>Add</span></button><button type="button" class="op-btn" data-calc="subtract">- <span>Subtract</span></button><button type="button" class="op-btn" data-calc="multiply">&times; <span>Multiply</span></button><button type="button" class="op-btn" data-calc="divide">&divide; <span>Divide</span></button></div>
+<div class="tool-results" id="calcResult" role="status" aria-live="polite"><span>RESULT</span><strong>Ready to calculate</strong><small>The answer will appear here.</small></div><button type="button" class="reset-link" id="calcClear">Clear inputs &amp; result</button></div>
+<div class="tool-aside"><span class="tool-aside-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M8 11h2m4 0h2M8 15h2m4 0h2M8 19h2m4 0h2"/></svg></span><h3>Four basic operations.</h3><p>Useful for everyday calculations. The calculator checks for missing values and prevents division by zero.</p><div class="small-example"><span>EXAMPLE</span><strong>12 &divide; 3 = 4</strong></div><aside class="note-card"><div class="note-ic"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5 5L20 6"/></svg></div><div><strong>Lab Skill 3</strong><p>This calculator follows the four-operation requirement from the earlier lab exercise.</p></div></aside></div></div></section></main>
+  <footer class="site-footer"><div class="page-container footer-row"><div><strong>AHMAD<span class="logo-dot">.</span></strong><span class="footer-small">Web Programming Individual Project</span></div><span class="footer-small">DSPD1703 &nbsp;&middot;&nbsp; DX242569SPDJ04 &nbsp;&middot;&nbsp; Section 01</span></div></footer>
+</body>
+</html>
